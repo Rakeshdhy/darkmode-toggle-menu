@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+
+
+:root{
+    --bg-color: #edf2fc;
+    --text-dark:#303030;
+    --text-orange: #ff4321;
+    --white-text:#fff;
+    --bg-orange:#303030
+}
+
+
+.dark-theme{
+    --bg-color: #000;
+    --text-dark:#fff;
+    --text-orange: #ff4321;
+    --white-text:#303030;
+    --bg-orange:#ff4321;
+
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: var(--bg-color);
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  width: 84%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+nav div{
+    flex: 1;
+    text-align: right;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+  margin: 10px 20px;
+}
+
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--text-orange);
+  text-decoration: none;
+}
+
+.info {
+  margin-left: 8%;
+  margin-top: 14%;
+}
+
+.info h1 {
+  font-size: 72px;
+  color: var(--text-dark);
+}
+
+.info h1 span {
+  color:var(--text-orange);
+}
+
+.info p {
+    color: var(--text-dark);
+}
+
+.info a {
+  background: var( --text-orange);
+  padding: 10px 20px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin: 30px 0px;
+  border-radius: 5px;
+}
+.info a:hover {
+background-color: var(--bg-orange);
+
+}
+
+
+
+.img-box {
+  width: 47%;
+  position: absolute;
+  height: 80%;
+  bottom: 0;
+  right: 100px;
+}
+
+.img-box img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+
+.img-box:hover .main-img {
+  left: 52%;
+}
+
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+
+.social-links a{
+    font-size: 36px;
+    color: var(--text-dark);
+    margin-right: 20px;
+}
+
+.social-links a:hover{
+    color: var(--text-orange);
+}
+
+.togglebtn{
+    width: 35px;
+    cursor: pointer;
+}

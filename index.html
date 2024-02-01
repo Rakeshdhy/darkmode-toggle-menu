@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Make A Website With Image Transform Effect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+
+
+    ">
+
+</head>
+<body>
+<div class="hero">
+
+<nav>
+<img src="images/logo.png" alt="" srcset="" class="logo">
+<div>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Portfolio</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Hire Me</a></li>
+</ul>
+</div>
+
+<img src="images/moon.png" alt="" srcset="" id="dark-mode" class="togglebtn">
+
+</nav>
+
+
+    <div class="info">
+        <h1>I'm <span>Kate</span> Amelia</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae laudantium sit est <br/>molestias unde.</p>
+
+        <a href="#">More Info</a>
+    </div>
+
+
+<div class="img-box">
+<img src="images/pattern.png" alt="" srcset="" class="back-img">
+<img src="images/girl.png" alt="" class="main-img">
+
+</div>
+
+
+<div class="social-links">
+   <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+   <a href=""> <i class="fa-brands fa-square-behance"></i></a>
+   <a href=""> <i class="fa-brands fa-dribbble"></i></a>
+
+</div>
+  </div> 
+
+
+
+
+<div class="container">
+
+    <h1>Hello World</h1>
+
+</div>
+
+
+
+
+
+
+
+<script>
+const toggleBtn = document.querySelector(".togglebtn");
+toggleBtn.onclick = function(){
+document.body.classList.toggle("dark-theme")
+if(document.body.classList.contains("dark-theme")){
+    toggleBtn.src = "images/sun.png";
+}else{
+    toggleBtn.src = "images/moon.png";
+
+}
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
